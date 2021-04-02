@@ -1,0 +1,86 @@
+:root{
+    font-size: 18px;
+}
+
+*{
+    /* Reset defaults */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans',sans-serif;
+    color: hsl(0,11%,12%);
+}
+
+section{
+    background: hsl(185, 75%, 39%);
+    height: 100vh; /* use entire hight of the screen */
+    display: flex; /*  */
+    justify-content: center; /*  */
+    align-items: center; /*  */
+    position: relative; /* to include the animations*/
+}
+
+.card{
+    width: 350px; /* width of the card */
+    border-radius: 20px; /* makes the curved corners */
+    background: white; /* makes background white */
+    overflow: hidden; /* so the corners continue to be curved */
+    text-align: center; /* centers everying in the card */
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg); /* uses image for background */
+    background-size: cover;
+    height: 150px;
+}
+
+.card-body{
+padding: 0 20px 30px; /* space for text on sides and bottom*/
+}
+
+.img-holder{
+    height: 100px; /* controls the image hight also makes it left align, */
+    width: 100px;  
+    border-radius: 50%; /* make circle */
+    border: 5px solid white; /*gives white border*/
+    overflow: hidden;
+    margin: -50px auto 30px auto; /* compinsate by half of the image size and 5 px from border*/
+
+}
+
+.img-holder img{ /* targets the image withing the img-holder*/
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name-age{
+    font-size: 1rem; /* 18 pixels */ /*look up rem*/
+    margin-bottom: 20px;
+}
+
+.age, 
+.city, 
+.item-sub-text{ /* affects 3 text simaltaniously the same color and weight*/
+    font-weight: 400;
+    color: hsl(0,11%,12%);
+    opacity: .6;
+}
+.age{
+    font-weight: 400;
+}
+.card-footer{
+    border-top: 1px solid hsl(0, 0%, 75%) /* used the neutrual color from the style guide*/
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*https://youtu.be/vjObtWO5RvU?t=945*/
