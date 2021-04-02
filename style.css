@@ -38,16 +38,16 @@ section{
 }
 
 .card-body{
-padding: 0 20px 30px; /* space for text on sides and bottom*/
+padding: 0 20px 25px; /* space for text on sides and bottom*/
 }
 
 .img-holder{
-    height: 100px; /* controls the image hight also makes it left align, */
-    width: 100px;  
+    height: 110px; /* controls the image hight also makes it left align, */
+    width: 110px;  
     border-radius: 50%; /* make circle */
     border: 5px solid white; /*gives white border*/
     overflow: hidden;
-    margin: -50px auto 30px auto; /* compinsate by half of the image size and 5 px from border*/
+    margin: -55px auto 30px auto; /* compinsate by half of the image size and 5 px from border*/
 
 }
 
@@ -57,24 +57,56 @@ padding: 0 20px 30px; /* space for text on sides and bottom*/
     display: block;
 }
 
-.name-age{
-    font-size: 1rem; /* 18 pixels */ /*look up rem*/
-    margin-bottom: 20px;
-}
-
 .age, 
 .city, 
 .item-sub-text{ /* affects 3 text simaltaniously the same color and weight*/
     font-weight: 400;
     color: hsl(0,11%,12%);
-    opacity: .6;
+    opacity: .5;
 }
+.name-age{
+    font-size: 1.1rem; /* 18 pixels */ /*look up rem*/
+    margin-bottom: 12px;
+}
+
 .age{
     font-weight: 400;
 }
-.card-footer{
-    border-top: 1px solid hsl(0, 0%, 75%) /* used the neutrual color from the style guide*/
+
+.city{
+    font-size: .9rem;
 }
+.card-footer{
+    border-top: 1px solid hsl(0, 0%, 75%); /* used the neutrual color from the style guide*/
+    display: flex; /* Keeps the text together */
+    padding: 0 25px;
+}
+
+.card-footer .item {
+    flex: 1; /* Equal spacing between items*/
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .item .item-value {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card-footer .item .item-sub-text {
+    font-size: .6rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
